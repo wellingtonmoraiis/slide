@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul{
+  list-style: none;
+}
+img{
+  display: block;/*tira o espaço padrão entre as imgs*/
+  max-width: 100%;
+}
+.slide-wrapper{
+  overflow: hidden;/*esconde o conteúdo que ultrapassa o tamanho da tela*/
+}
+
+.slide{
+  display: flex;
+}
+.slide li{
+  flex-shrink: 0;/*Esta propriedade define a proporção com que um item deve encolher caso seja necessário. Essa propriedade aceita apenas valores positivos, e seu valor padrão é 1.*/
+  width: 80vw;/*80% do tamanho da tela*/
+  max-width: 800px;
+  margin: 0 20px;
+}
